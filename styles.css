@@ -1,0 +1,140 @@
+<style>
+    :root {
+      --bg: #F7F6F2;
+      --text: #111111;
+      --muted: #5F5F5F;
+      --line: #E7E5DF;
+      --accent: #B38B5A;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    /* NAV */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .button {
+      padding: 10px 18px;
+      border: 1px solid var(--text);
+      border-radius: 6px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--text);
+      color: white;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 34px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .stack-tight {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .center {
+      text-align: center;
+      align-items: center;
+    }
+
+    .spacer {
+      height: 24px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 40px 0;
+    }
+
+    /* Framework spacing */
+    .framework {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .framework-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+    }
+  </style>
