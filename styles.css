@@ -54,6 +54,7 @@
     }
 
     .button:hover {
+      transform: translateY(-1px);  
       background: var(--text);
       color: white;
     }
