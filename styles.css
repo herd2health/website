@@ -1,229 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herd 2 Health</title>
+  <meta name="description" content="Helping high-performing people who feel off restore energy, clarity, and physical capacity." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-:root {
-  --bg: #F7F6F2;
-  --text: #111111;
-  --muted: #666666;
-  --line: rgba(0,0,0,0.08);
-  --accent: #B38B5A;
-}
+<body>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
 
-html {
-  scroll-behavior: smooth;
-}
+      <a href="/" class="brand">
+        <img src="logo.png" alt="Herd 2 Health Logo" class="logo-img">
+      </a>
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-}
+      <a href="mailto:you@email.com" class="nav-cta">
+        Start a conversation
+      </a>
 
-/* Layout */
+    </nav>
+  </div>
+</header>
 
-.container {
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+<main>
 
-.narrow {
-  max-width: 680px;
-}
+<section class="hero">
+  <div class="container">
+    <div class="stack">
+      <h1>You’re not broken.<br>But something isn’t working.</h1>
 
-section {
-  padding: 110px 0;
-}
+      <p class="muted">
+        Everything looks right on paper.<br>
+        But your energy, body, and mind don’t feel the way they should.
+      </p>
 
-.space-m {
-  height: 24px;
-}
+      <div>
+        <a href="mailto:you@email.com" class="button">
+          Start here →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* Header */
+<section>
+  <div class="container narrow">
+    <div class="stack-tight">
+      <p>You’re productive.</p>
+      <p>Responsible.</p>
+      <p>Capable.</p>
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(247, 246, 242, 0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line);
-}
+      <div class="space-m"></div>
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
-}
+      <p>But—</p>
 
-.brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+      <p>You feel slightly off.</p>
+      <p>Lower energy than you should have.</p>
+      <p>Tight in your body.</p>
+      <p>Less clear than you know you can be.</p>
 
-.logo-img {
-  height: 56px;
-  width: auto;
-  display: block;
-}
+      <div class="space-m"></div>
 
-.nav-cta,
-.button {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--text);
-  border: 1px solid var(--text);
-  border-radius: 8px;
-  padding: 11px 18px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
+      <p>Nothing dramatic.</p>
+      <p>Just not right.</p>
+    </div>
+  </div>
+</section>
 
-.nav-cta:hover,
-.button:hover {
-  background: var(--text);
-  color: #ffffff;
-  transform: translateY(-1px);
-}
+<section>
+  <div class="container narrow">
+    <div class="stack-tight">
+      <p>This isn’t a discipline problem.</p>
+      <p class="emphasis">It’s a system problem.</p>
+      <p>Most people try to push harder.</p>
+      <p>But if the system underneath isn’t working, effort doesn’t fix it.</p>
+    </div>
+  </div>
+</section>
 
-/* Typography */
+<section>
+  <div class="container center">
+    <div class="stack">
+      <h2>Nothing is broken.</h2>
+      <p class="muted">But something isn’t working optimally.</p>
+    </div>
+  </div>
+</section>
 
-h1 {
-  font-size: 64px;
-  line-height: 1.05;
-  font-weight: 500;
-  letter-spacing: -1.5px;
-}
+<section>
+  <div class="container narrow">
+    <div class="framework">
 
-h2 {
-  font-size: 36px;
-  line-height: 1.15;
-  font-weight: 500;
-  letter-spacing: -0.8px;
-}
+      <div class="framework-item">
+        <h2>Reset</h2>
+        <p class="muted">Remove what’s interfering.</p>
+      </div>
 
-p {
-  font-size: 19px;
-}
+      <div class="framework-item">
+        <h2>Build</h2>
+        <p class="muted">Restore movement, circulation, and capacity.</p>
+      </div>
 
-.muted {
-  color: var(--muted);
-}
+      <div class="framework-item">
+        <h2>Expand</h2>
+        <p class="muted">Create more space in the mind.</p>
+      </div>
 
-.emphasis {
-  font-size: 22px;
-  color: var(--text);
-}
+    </div>
+  </div>
+</section>
 
-/* Utility */
+<section>
+  <div class="container narrow">
+    <div class="stack-tight">
+      <p>Energy that holds throughout the day.</p>
+      <p>A body that feels capable again.</p>
+      <p>Clear thinking without forcing it.</p>
+      <p>Less friction in how you move, think, and operate.</p>
+    </div>
+  </div>
+</section>
 
-.stack {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+<section>
+  <div class="container center">
+    <div class="stack">
+      <p>If this resonates, the next step is a conversation.</p>
+      <p class="muted">No pressure. No pitch.</p>
 
-.stack-tight {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+      <a href="mailto:you@email.com" class="button">
+        Start a conversation →
+      </a>
+    </div>
+  </div>
+</section>
 
-.center {
-  text-align: center;
-}
+</main>
 
-.hero {
-  padding-top: 140px;
-}
+<footer>
+  <div class="container">
+    <div class="divider"></div>
 
-/* Framework */
+    <p class="muted footer-text">
+      Helping high-performing people who feel off restore energy, clarity, and physical capacity.
+    </p>
+  </div>
+</footer>
 
-.framework {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-}
-
-.framework-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* Footer */
-
-footer {
-  padding: 80px 0;
-}
-
-.divider {
-  height: 1px;
-  background: var(--line);
-  margin-bottom: 28px;
-}
-
-.footer-text {
-  font-size: 16px;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .nav {
-    padding: 14px 0;
-  }
-
-  .logo-img {
-    height: 46px;
-  }
-
-  .nav-cta {
-    font-size: 13px;
-    padding: 10px 14px;
-  }
-
-  section {
-    padding: 78px 0;
-  }
-
-  .hero {
-    padding-top: 95px;
-  }
-
-  h1 {
-    font-size: 42px;
-    letter-spacing: -1px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 17px;
-  }
-
-  .emphasis {
-    font-size: 20px;
-  }
-
-  .framework {
-    gap: 40px;
-  }
-}
+</body>
+</html>
