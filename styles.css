@@ -43,6 +43,12 @@
       letter-spacing: 1px;
     }
 
+    .logo-img {
+    height: 34px;
+    width: auto;
+    opacity: 0.95;
+    }
+
     .button {
       cursor: pointer;
       padding: 12px 22px;
